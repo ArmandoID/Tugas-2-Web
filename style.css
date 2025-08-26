@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #f0f5ff, #ffffff);
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    font-family: Poppins, sans-serif;
+    box-shadow: -1px 2px 100px 20px rgba(72, 72, 116, 0.1);
+}
+
+.left {
+    display: flex;
+    flex: 1.1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #ffffff;
+    padding: 3rem;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.left .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2020aa;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0s;
+}
+
+.left h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #81848a;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.1s;
+}
+
+.forms input{
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1.5px solid #d3d8e3;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.forms input::placeholder{
+    color: #81848a;
+}
+
+.forms .name {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.forms .email {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.forms .password {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.terms {
+    color: #858fa4;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.terms input{
+    accent-color: #2020aa;
+    width: 18px;
+    height: 18px;
+}
+
+.left button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F82AA6;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.8s;
+}
+
+.signin {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 1s;
+}
+
+.signin a {
+    color: #F82AA6;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(152deg, #F82AA6, #AF32C0, #9435CE, #6C39DA, #4740E8);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    gap: 20px;
+}
+
+.right .title {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 500;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.7s;
+}
+
+.right .subtitle {
+    color: #ffffff;
+    max-width: 30ch;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.9s;
+}
